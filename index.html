@@ -1,0 +1,41 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vigenère Cipher Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Vigenère Cipher Encryption</h2>
+
+    <input type="text" id="message" placeholder="Enter Message">
+
+    <input type="text" id="key" placeholder="Enter Secret Key">
+
+    <button onclick="encryptMessage()">Encrypt & Save</button>
+
+    <h3>Results</h3>
+
+    <p><strong>Plain Text:</strong> <span id="plain"></span></p>
+    <p><strong>Cipher Text:</strong> <span id="cipher"></span></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Cipher Text</th>
+                <th>Plain Text</th>
+                <th>Key</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
